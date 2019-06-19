@@ -1,0 +1,19 @@
+.aboutUs {
+
+    .continer {
+        margin: auto;
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+
+        justify-content: space-around;
+
+        .articleWrap {
+            padding: 15px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

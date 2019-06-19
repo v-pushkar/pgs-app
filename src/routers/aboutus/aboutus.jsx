@@ -1,4 +1,6 @@
 import React from "react";
+import "./aboutus.scss";
+import Article from "./../../components/article/article";
 
 class Aboutus extends React.Component {
   constructor() {
@@ -7,7 +9,23 @@ class Aboutus extends React.Component {
   }
 
   render() {
-    return <h1>ABOUT US</h1>;
+    return (
+      <section className="aboutUs">
+        <div className="row">
+          <div className="continer">
+            <div className="articleWrap">
+              <Article />
+            </div>
+            <div className="articleWrap">
+              <Article />
+            </div>
+            <div className="articleWrap">
+              <Article />
+            </div>
+          </div>
+        </div>
+      </section>
+    );
   }
 }
 
