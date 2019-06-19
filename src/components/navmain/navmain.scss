@@ -1,0 +1,21 @@
+.mainNav {
+    box-sizing: border-box;
+    padding: 15px 0;
+    text-align: left;
+    // padding: 0 20px;
+
+    .navLink {
+        box-sizing: border-box;
+        text-transform: uppercase;
+        color: #333;
+        font-weight: bold;
+        padding: 15px 0;
+        margin: 30px 15px;
+        border-bottom: 2px solid transparent;
+
+        &.active {
+            color: #F4762B;
+            border-bottom: 2px solid #F4762B;
+        }
+    }
+}

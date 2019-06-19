@@ -1,0 +1,21 @@
+footer {
+    background-color: #333333;
+    height: 100px;
+    padding: 25px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+   
+
+    .infoWrap {
+        border-top: 1px solid #ffffff;
+        display: inline-block;
+        margin: auto;
+        text-align: center;
+        color: #ffffff;
+
+        label {
+            color: #ffffff;
+        }
+    }
+}

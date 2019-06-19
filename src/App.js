@@ -1,24 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import "./main.scss";
+import { Header, Footer } from "./components/index";
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { Aboutus, Scicams, Contacts } from "./routers/index";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <main>
+        {/* <Router> */}
+        <Switch>
+          <Route exact path="/aboutus" component={Aboutus} />
+          {/* Оба /roster и /roster/:number начинаются с /roster */}
+          <Route path="/scicams" component={Scicams} />
+          <Route path="/contacts" component={Contacts} />
+        </Switch>
+        {/* </Router> */}
+      </main>
+
+      <Footer />
     </div>
   );
 }
