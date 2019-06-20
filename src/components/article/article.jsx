@@ -1,5 +1,6 @@
 import React from "react";
 import { Img1 } from "./../../media/img/index";
+import "./article.scss";
 
 class Article extends React.Component {
   constructor() {
