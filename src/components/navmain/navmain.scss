@@ -1,21 +1,33 @@
+$colorTaxt_gl:#7F7F7F;
+$linkColor:  #F4762B;
+
 .mainNav {
     box-sizing: border-box;
-    padding: 15px 0;
+    padding: 5px 0;
     text-align: left;
-    // padding: 0 20px;
+    margin-top: 35px;
 
     .navLink {
         box-sizing: border-box;
         text-transform: uppercase;
-        color: #333;
+        color: $colorTaxt_gl;
         font-weight: bold;
-        padding: 15px 0;
-        margin: 30px 15px;
+        padding: 12px 0;
         border-bottom: 2px solid transparent;
 
+        &:hover {
+            text-decoration: none;
+            color:  $linkColor;
+        }
+
+
+        &:not(:first-child) {
+            margin-left: 65px;
+        }
+
         &.active {
-            color: #F4762B;
-            border-bottom: 2px solid #F4762B;
+            color: $linkColor;
+            border-bottom: 2px solid $linkColor;
         }
     }
 }

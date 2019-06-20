@@ -2,6 +2,12 @@
     text-align: left;
 
     .logo {
+        svg {
+            margin-left: 16px;
+            width: 100px;
+            transform: scale(2)
+        }
+
         .st1 {
             fill: #F4762B !important;
             stroke: none;

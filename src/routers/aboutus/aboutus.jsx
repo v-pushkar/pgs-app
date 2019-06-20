@@ -13,13 +13,13 @@ class Aboutus extends React.Component {
       <section className="aboutUs">
         <div className="container">
           <div className="row">
-            <div className="articleWrap col-lg-4 col-md-4 col-sm-2 col-1">
+            <div className="articleWrap col-lg-4 col-md-4 col-sm-6 col-12">
               <Article />
             </div>
-            <div className="articleWrap col-lg-4 col-md-4 col-sm-2 col-1">
+            <div className="articleWrap col-lg-4 col-md-4 col-sm-6 col-12">
               <Article />
             </div>
-            <div className="articleWrap col-lg-4 col-md-4 col-sm-2 col-1">
+            <div className="articleWrap col-lg-4 col-md-4 col-sm-6 col-12">
               <Article />
             </div>
           </div>
