@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "./logo.svg";
-import "./App.css";
-import "./main.scss";
+import "./styles/App.scss";
+
 import { Header, Footer } from "./components/index";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import { Aboutus, Scicams, Contacts } from "./routers/index";

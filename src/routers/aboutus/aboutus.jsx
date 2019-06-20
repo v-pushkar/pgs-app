@@ -11,15 +11,15 @@ class Aboutus extends React.Component {
   render() {
     return (
       <section className="aboutUs">
-        <div className="row">
-          <div className="continer">
-            <div className="articleWrap">
+        <div className="container">
+          <div className="row">
+            <div className="articleWrap col-lg-4 col-md-4 col-sm-2 col-1">
               <Article />
             </div>
-            <div className="articleWrap">
+            <div className="articleWrap col-lg-4 col-md-4 col-sm-2 col-1">
               <Article />
             </div>
-            <div className="articleWrap">
+            <div className="articleWrap col-lg-4 col-md-4 col-sm-2 col-1">
               <Article />
             </div>
           </div>

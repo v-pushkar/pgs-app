@@ -2,4 +2,9 @@ $textcolor: #333;
 
 article {
     color: $textcolor;
+    .articleImg{
+        img{
+            width: 100%;
+        }
+    }
 }
