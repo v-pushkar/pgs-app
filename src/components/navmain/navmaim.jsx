@@ -5,12 +5,12 @@ import { isTemplateElement } from "@babel/types";
 
 const links = [
   { to: "/aboutus", text: "about us" },
-  { to: "/scicams", text: "about us" },
-  { to: "/contacts", text: "about us" }
+  { to: "/scicams", text: "sckicams" },
+  { to: "/contacts", text: "contacts" }
 ];
-const LinksEl = links.map(links => (
-  <NavLink className="navLink" activeClassName="active" to={links.to}>
-    {links.text}
+const LinksEl = links.map(link => (
+  <NavLink className="navLink" activeClassName="active" to={link.to}>
+    {link.text}
   </NavLink>
 ));
 

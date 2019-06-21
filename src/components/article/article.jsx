@@ -6,21 +6,19 @@ class Article extends React.Component {
   constructor() {
     super();
     this.state = { someKey: "someValue" };
+    
   }
 
   render() {
     return (
       <article>
         <div className="articleImg">
-          <img src={Img1} alt="article 1" />
+          <img src={this.props.img} alt="article 1" />
         </div>
         <div className="artickeText">
-          <h3>lorem ipsum </h3>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo fuga
-            ducimus vero aliquam incidunt exercitationem provident ex omnis
-            dignissimos! Quas est, eos aliquam excepturi non eaque atque autem
-            doloribus molestias.
+          <h3 className="title">{this.props.title}</h3>
+          <p className="textBlock">
+           {this.props.text}
           </p>
         </div>
       </article>

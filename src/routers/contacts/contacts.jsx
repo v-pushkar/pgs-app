@@ -7,7 +7,15 @@ class Contacts extends React.Component {
   }
 
   render() {
-    return <p>{this.state.someKey}</p>;
+    return (
+      <div className="container">
+        <div className="row">
+          <div className="text-center">
+            <h2>CONTACTS</h2>
+          </div>
+        </div>
+      </div>
+      );
   }
 }
 

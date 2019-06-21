@@ -1,11 +1,46 @@
 $textcolor: #7F7F7F;
 
 article {
+    border: 1px solid #e0e0e0;
     color: $textcolor;
+    border-radius: 3px;
+    animation: articleShow 0.4s;
+
+    .artickeText {
+        overflow: hidden;
+        padding: 25px 20px;
+        background-color: #fff;
+
+        .title {
+            font-size: 180%;
+            font-weight: 500;
+        }
+        .textBlock{
+            box-sizing: border-box;
+            height: 50px;
+            text-overflow: ellipsis;
+            white-space: normal;
+            overflow: hidden;
+        }
+    }
 
     .articleImg {
+        height: 210px;
+        overflow: hidden;
+
         img {
+            min-height: 100%;
             width: 100%;
         }
+    }
+}
+
+@keyframes articleShow {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
     }
 }
