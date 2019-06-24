@@ -5,7 +5,11 @@ import "./styles/App.scss";
 import { Header, Footer } from "./components/index";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import { Aboutus, Scicams, Contacts } from "./routers/index";
-const Notfound = () => <h1>Not found</h1>;
+const Notfound = () => (
+  <div className="container">
+    <h1>Page not found</h1>
+  </div>
+);
 
 function App() {
   return (
