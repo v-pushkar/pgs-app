@@ -1,0 +1,41 @@
+// screen sizes:
+$small: 520px;
+$midle: 600px;
+$large: 1024px;
+
+// Color of text global
+$colorTaxt_gl:#7F7F7F;
+
+// height of header 
+$hederHeight: 165px;
+//  height of footer
+$footerHeight: 100px;
+
+// color for lincs
+$linkColor: #F4762B;
+
+.boxShadow {
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(127, 127, 127, 1);
+    -moz-box-shadow: 0px 0px 3px 0px rgba(127, 127, 127, 1);
+    box-shadow: 0px 0px 3px 0px rgba(127, 127, 127, 1);
+}
+
+@mixin respond-to($media) {
+    @if $media==handhelds {
+        @media only screen and (max-width: $small) {
+            @content;
+        }
+    }
+
+    @else if $media==medium-screens {
+        @media only screen and (min-width: $small + 1) and (max-width: $large - 1) {
+            @content;
+        }
+    }
+
+    @else if $media==wide-screens {
+        @media only screen and (min-width: $large) {
+            @content;
+        }
+    }
+}

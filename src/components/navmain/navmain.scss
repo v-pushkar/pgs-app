@@ -1,11 +1,31 @@
-$colorTaxt_gl:#7F7F7F;
-$linkColor:  #F4762B;
+@import "../../styles/varibels.scss";
 
-.mainNav {
+.nawWrapp {
     box-sizing: border-box;
     padding: 5px 0;
     text-align: left;
-    margin-top: 35px;
+
+    position: relative;
+
+    .mainNav {
+        margin-top: 35px;
+
+        @include respond-to(handhelds) {
+            justify-content: space-between;
+            display: flex;
+        }
+    }
+
+    .mobileBtn {
+        display: none;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+        // @include respond-to(handhelds) {
+        //     display: block;
+        // }
+    }
 
     .navLink {
         box-sizing: border-box;
@@ -15,14 +35,22 @@ $linkColor:  #F4762B;
         padding: 12px 0;
         border-bottom: 2px solid transparent;
 
+        @include respond-to(handhelds) {
+            padding: 5px 0
+        }
+
         &:hover {
             text-decoration: none;
-            color:  $linkColor;
+            color: $linkColor;
         }
 
 
         &:not(:first-child) {
             margin-left: 65px;
+
+            @include respond-to(handhelds) {
+                margin-left: 20px;
+            }
         }
 
         &.active {

@@ -1,16 +1,13 @@
 import React from "react";
-// import Skicams from "./../../components/skicams/skicam";
+import Skicam from "./../../components/skicam/skicam";
+import "./scicams.scss";
 
 class Scicams extends React.Component {
   render() {
     return (
-      <section>
-        <div className="continer">
-          <div className="row">
-            <div className="col-lg-4 col-md-4 col-sm-6 col-12">
-              <img src="http://www.cimonesci.it/cams/cimone1.jpg" />
-            </div>
-          </div>
+      <section className="skiCams">
+        <div className="container">
+          <Skicam />
         </div>
       </section>
     );

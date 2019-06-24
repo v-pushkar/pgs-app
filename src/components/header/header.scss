@@ -1,6 +1,9 @@
+@import "../../styles/varibels.scss";
+
 header {
     background-color: #ffffff;
     border-bottom: 2px solid #d1caca;
     padding-top: 25px;
     padding-bottom: 5px;
+    @extend .boxShadow;
 }

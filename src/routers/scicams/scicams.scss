@@ -1,0 +1,13 @@
+@import '../../styles/varibels.scss';
+@import '../../styles/animatios.scss';
+
+
+.skiCams {
+    animation: $animation1;
+    padding: 20px;
+
+    .row {
+        display: flex;
+        justify-content: center;
+    }
+}

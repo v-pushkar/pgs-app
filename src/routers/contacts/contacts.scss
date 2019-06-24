@@ -1,14 +1,59 @@
+@import "../../styles/varibels.scss";
+@import "../../styles/animatios.scss";
+
 .contacts {
     .formWrapp {
         margin: auto;
 
         .contactform {
-            background-color: #fff;
-            padding: 25px;
+
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            animation: $animation1;
+
+            @include respond-to(wide-screens) {
+                min-height: calc(100vh - #{$hederHeight} - #{$footerHeight});
+            }
+
+
+
+            .formWrapper {
+
+                background-color: #fff;
+                border-radius: 3px;
+                @extend .boxShadow;
+                width: 100%;
+
+                @include respond-to(handhelds) {
+                    margin-top: 25px;
+                }
+
+            }
+
+            form {
+                position: relative;
+                background-color: #fff;
+                margin: 55px 100px;
+                padding: 25px;
+                @include respond-to(handhelds) {
+                    margin: 25px;
+                }
+
+                .formErrors {
+                    line-height: 1;
+                    font-weight: 100;
+                    position: absolute;
+                    font-size: 10px;
+                    color: orangered;
+                    bottom: -20px;
+                }
+            }
 
             .group {
                 position: relative;
-                margin-bottom: 45px;
+                margin-bottom: 10px;
 
                 &.required {
                     label::after {
@@ -20,31 +65,75 @@
                         margin-left: 5px;
                     }
                 }
+
+                &.hastext {
+
+                    label {
+                        top: -10px;
+                        font-size: 14px;
+                        color: #5264AE;
+
+                    }
+                }
+
+                &.message {
+                    height: 140px;
+                    display: flex;
+
+                    textarea {
+                        resize: none;
+                    }
+
+                    label {
+                        bottom: 0;
+                        top: auto;
+                    }
+
+                    &.hastext {
+
+                        label {
+                            top: -10px;
+                            font-size: 14px;
+                            color: #5264AE;
+
+                        }
+                    }
+
+                    textarea:focus~label,
+                    textarea:valid~label {
+                        top: -10px;
+                        font-size: 14px;
+                        color: #5264AE;
+                    }
+                }
             }
 
-            input {
-                font-size: 18px;
+            input,
+            textarea {
+                font-size: 16px;
                 padding: 10px 10px 10px 5px;
                 display: block;
                 width: 100%;
                 border: none;
-                border-bottom: 1px solid #757575;
+                border-bottom: 2px solid #757575;
+
 
             }
 
-            input:focus {
+            input:focus,
+            textarea:focus {
                 outline: none;
             }
 
             /* LABEL ======================================= */
             label {
-                color: #999;
-                font-size: 18px;
-                font-weight: normal;
                 position: absolute;
+                color: #999;
+                font-size: 16px;
+                font-weight: 600;
                 pointer-events: none;
-                left: 5px;
-                top: 10px;
+                left: 0px;
+                top: 15px;
                 transition: 0.2s ease all;
                 -moz-transition: 0.2s ease all;
                 -webkit-transition: 0.2s ease all;
@@ -53,14 +142,17 @@
             /* active state */
             input:focus~label,
             input:valid~label {
-                top: -20px;
+                top: -10px;
                 font-size: 14px;
                 color: #5264AE;
             }
         }
 
         .btn-wrapp {
+            margin-top: 100px;
             text-align: right;
         }
+
+
     }
 }

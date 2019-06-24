@@ -1,10 +1,13 @@
-$textcolor: #7F7F7F;
+@import "../../styles/varibels.scss";
+$textcolor: $colorTaxt_gl;
 
 article {
-    border: 1px solid #e0e0e0;
+    // border: 1px solid #e0e0e0;
     color: $textcolor;
     border-radius: 3px;
     animation: articleShow 0.4s;
+    @extend .boxShadow;
+    margin-bottom: 20px;
 
     .artickeText {
         overflow: hidden;
@@ -15,7 +18,8 @@ article {
             font-size: 180%;
             font-weight: 500;
         }
-        .textBlock{
+
+        .textBlock {
             box-sizing: border-box;
             height: 50px;
             text-overflow: ellipsis;

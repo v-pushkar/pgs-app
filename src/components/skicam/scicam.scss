@@ -1,0 +1,37 @@
+@import "../../styles/varibels.scss";
+
+.camsBlock {
+
+    margin: 20px 0;
+    color: $colorTaxt_gl;
+    background-color: #fff;
+    @extend .boxShadow;
+    overflow: hidden;
+
+    .imgWrapp {
+        img {
+            width: 100%
+        }
+    }
+
+    .title {
+        padding: 15px;
+        position: relative;
+
+        h3 {
+            text-align: center;
+            font-size: 28px;
+            font-weight: 400;
+        }
+
+        label {
+            position: absolute;
+            right: 15px;
+            top: 15px;
+            font-weight: 500;
+            font-size: 10px;
+            font-size: 16px;
+        }
+    }
+
+}

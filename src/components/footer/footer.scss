@@ -1,6 +1,9 @@
+@import "../../styles/varibels.scss";
+@import "../../styles/animatios.scss";
+
 footer {
     background-color: #333333;
-    height: 100px;
+
     padding: 25px;
     position: fixed;
     bottom: 0;
@@ -9,13 +12,21 @@ footer {
 
     .infoWrap {
         border-top: 1px solid #ffffff;
-        display: inline-block;
+        width: 20%;
+        padding: 20px;
         margin: auto;
         text-align: center;
         color: #ffffff;
 
+        @include respond-to(handhelds) {
+            width: 50%;
+        }
+
+
         label {
             color: #ffffff;
+            font-weight: 600;
+            font-size: 16px;
         }
     }
 }

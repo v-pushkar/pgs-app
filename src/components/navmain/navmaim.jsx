@@ -5,7 +5,7 @@ import { isTemplateElement } from "@babel/types";
 
 const links = [
   { to: "/aboutus", text: "about us" },
-  { to: "/scicams", text: "sckicams" },
+  { to: "/scicams", text: "skicams" },
   { to: "/contacts", text: "contacts" }
 ];
 const LinksEl = links.map(link => (
@@ -20,7 +20,12 @@ class Navmaim extends React.Component {
   }
 
   render() {
-    return <nav className="mainNav">{LinksEl}</nav>;
+    return (
+      <div className="nawWrapp">
+        <button className="mobileBtn">-</button>
+        <nav className="mainNav">{LinksEl}</nav>
+      </div>
+    );
   }
 }
 
