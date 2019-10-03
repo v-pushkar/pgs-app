@@ -18,8 +18,7 @@ function App() {
       <main>
         {/* <Router> */}
         <Switch>
-          <Route exact path="/aboutus" component={Aboutus} />
-          {/* Оба /roster и /roster/:number начинаются с /roster */}
+          <Route exact path="/aboutus" component={Aboutus} />          
           <Route path="/scicams" component={Scicams} />
           <Route path="/contacts" component={Contacts} />
           <Route component={Notfound} />
